@@ -31,7 +31,7 @@ const CiDiTuc = () => {
   return (
     <div className="">
       <img src={damian} alt="" className="damian" />
-      <div className="w-100">
+      <div className="">
         <div className={`navBarCont ${scrolled ? "scrolled" : ""}`}>
           <img src={logoNav} alt="logo nav" />
           <div className="navBar">
@@ -42,8 +42,8 @@ const CiDiTuc = () => {
           </div>
         </div>
       </div>
-      <section id="que-es" className=" queEs">
-        <div className="">
+      <section id="que-es" className=" ">
+        <div className="queEs">
           <h1>¿Qué es CiDiTuc?</h1>
           <p>
             Ciudad Digital es una plataforma tecnológica que posibilita a los
@@ -84,7 +84,7 @@ const CiDiTuc = () => {
         </div>
       </section>
       <section id="como-registro" className="row comoRegistro">
-        <img src={registro} alt="registro" className="col-md-6 col-12" />
+      
         <div className="col-md-6 col-12">
           <h1>¿Cómo me registro como Ciudadano Digital?</h1>
           <p className="mt-4">
@@ -109,6 +109,9 @@ const CiDiTuc = () => {
             Registrarte
           </Button>
         </div>
+        <div className="col-md-6 col-12">
+         <img src={registro} alt="registro"  />
+        </div> 
       </section>
     </div>
   );
