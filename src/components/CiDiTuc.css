@@ -1,0 +1,175 @@
+.navBarCont {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    /* background-color: blue; */
+    transition: background-color 0.3s ease;
+}
+
+.navBarCont img {
+    height: 60%;
+    align-self: center;
+}
+
+.navBarCont.scrolled {
+    background-color: #333 !important;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navBar a {
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    /* transform: animation;
+    animation-duration : 2s ease-in-out ; */
+}
+
+.navBar a:hover {
+    color: #f4dc00;
+
+
+}
+
+
+/* .navBarCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    
+  }
+  
+  .navBar a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+/*    
+  .h-100 {
+    height: 100vh;
+    padding: 2rem;
+  } */
+
+section {
+    padding: 1rem;
+    height: 80vh;
+}
+
+.queEs {
+    padding-top: 14rem;
+    height: 70vh !important;
+    background-color: #1f89f6;
+    width: 65%;
+    top: -100px;
+    z-index: -9;
+    border-bottom-right-radius: 85px;
+    position: relative;
+}
+
+.queEs h1,
+p {
+    color: #ffffff;
+}
+
+.queEs h1 {
+    font-size: 50px;
+}
+
+/* 
+.queEs p {
+     font-size: 20px;
+} */
+
+.queEs div {
+    margin-top: 40px;
+    margin-left: 175px;
+    width: 80%
+}
+
+.comoAccedo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 210px;
+    padding-right: 120px;
+    margin-top: 40px !important;
+    width: 100%;
+    /* background-color: #0066ff; */
+
+}
+
+.comoAccedo h1 {
+    color: #000000;
+
+}
+
+.comoAccedo p {
+    color: #000000;
+    margin-right: 80px;
+
+}
+
+.comoAccedo img {
+    box-shadow: 5px 5px 15px 2px #333558;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #1f89f6 !important;
+}
+
+.btn:hover {
+    background-color: #f4dc00 !important;
+    color: #333 !important
+}
+
+.damian {
+    height: 620px;
+    top: 0;
+    width: 700px !important;
+    position: absolute;
+    z-index: -10;
+    right: 0;
+    border-bottom-left-radius: 25%;
+}
+
+.comoRegistro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 40px !important;
+    background-color: #2eb1ff;
+    width: 100% !important;
+}
+
+.comoRegistro p {
+    color: #ffffff
+}
+
+.comoRegistro h1 {
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.comoRegistro img {
+    width: 700px;
+    border-radius: 20px;
+}
