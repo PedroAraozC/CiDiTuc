@@ -13,6 +13,8 @@
     transition: background-color 0.3s ease;
 }
 
+
+
 .navBarCont img {
     height: 60%;
     align-self: center;
@@ -25,7 +27,7 @@
 .navBar {
     display: flex;
     flex-direction: row;
-    width: 40%;
+    width: 70%;
     align-items: center;
     justify-content: space-around;
 }
@@ -45,28 +47,6 @@
 
 }
 
-
-/* .navBarCont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f8f9fa;
-    
-  }
-  
-  .navBar a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-  }
-/*    
-  .h-100 {
-    height: 100vh;
-    padding: 2rem;
-  } */
-
 section {
     height: 80vh;
     width: 100% !important;
@@ -81,23 +61,20 @@ section {
     z-index: -9;
     border-bottom-right-radius: 85px;
     position: relative;
+    box-shadow: 5px 12px 14px -10px #333558;
 }
 
-.queEs h1,
-p {
+.queEs p,
+h1 {
     color: #ffffff;
     padding-left: 65px;
 }
 
 .queEs h1 {
+    color: #ffffff;
     padding-top: 70px;
     font-size: 50px;
 }
-
-/* 
-.queEs p {
-     font-size: 20px;
-} */
 
 .queEs div {
     margin-top: 40px;
@@ -113,6 +90,7 @@ p {
     padding-left: 210px;
     padding-right: 120px;
     width: 100% !important;
+    height: 100vh;
     /* background-color: #0066ff; */
 
 }
@@ -120,10 +98,9 @@ p {
 .comoAccedoContenido {
     /* background-color: #0066ff; */
     padding: 45px;
+    padding-left: 35px !important;
     border-bottom-left-radius: 25px;
-    border-left: solid 1px;
-    border-bottom: solid 1px;
-    border-color: #1f89f6;
+    box-shadow: -11px 12px 14px -4px #414164;
 }
 
 .comoAccedo h1 {
@@ -171,6 +148,8 @@ p {
     padding-right: 120px;
     margin-top: 40px !important;
     background-color: #2eb1ff;
+    height: 100vh;
+    
 }
 
 .comoRegistro p {
@@ -186,4 +165,380 @@ p {
     width: 700px;
     border-radius: 20px;
     margin-left: 8.7px;
+}
+
+.terminosCondiciones {
+    height: 110vh;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+
+}
+
+.terminosCondiciones h1 {
+    font-size: 30px;
+}
+
+.terminosCondiciones h1,
+p {
+    color: #000000;
+    padding: 0px 25px 0px 25px;
+}
+
+.terminosCondicionesContenido {
+    columns: 2;
+    margin-top: 50px;
+
+}
+
+.terminosCondicionesContenido div {
+    padding-top: 20px;
+    border-radius: 10px;
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #2eb1ff;
+    margin: 20px;
+    box-shadow: 5px 5px 10px -1px #1f89f6;
+    text-align: center;
+
+}
+
+.restablecerClave {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px 0px 40px;
+    background-color: #1f89f6;
+    color: #ffffff;
+    padding-top: 150px;
+    text-align: left;
+}
+
+
+.restablecerClave p,
+h1 {
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.restablecerClave img {
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 30px;
+}
+
+
+
+@media (max-width: 1530px) {
+    .navBar {
+        width: 80%;
+    }
+
+    .comoRegistro img {
+        width: 600px;
+
+    }
+
+    .queEs {
+        padding: 170px;
+        padding-left: 100px;
+    }
+
+    .terminosCondiciones {
+        height: 125vh;
+    }
+
+    .restablecerClave {
+        padding-top: 100px;
+    }
+
+    .aa p,
+    h1 {
+        padding-left: 0 !important;
+        margin-left: 0 !important
+    }
+}
+
+
+
+
+@media (max-width: 1270px) {
+    .comoAccedo {
+        padding-left: 110px;
+        padding-right: 0px;
+        padding-top: 80px;
+        margin-bottom: 120px !important;
+        width: 100% !important;
+    }
+
+    .comoRegistro {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .comoRegistro img {
+        width: 500px;
+    }
+
+    .comoRegistro p {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .comoRegistro h1 {
+        color: #ffffff;
+        font-size: 25px;
+    }
+
+    .navBar {
+        width: 75%;
+    }
+
+    .terminosCondiciones {
+        height: 135vh;
+    }
+
+}
+
+@media (max-width: 1235px) {}
+
+@media (max-width: 1180px) {
+    .navBar {
+        width: 80%;
+    }
+
+    .damian {
+        display: none;
+    }
+
+    .queEsSecction {
+        height: 65vh;
+    }
+
+    .queEs {
+        width: 100%;
+        height: 70vh !important;
+    }
+
+    .terminosCondiciones {
+        height: 145vh;
+    }
+}
+
+@media (max-width: 1090px) {
+
+    .comoAccedo {
+        flex-direction: column-reverse !important;
+        height: 150vh;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 0 !important;
+    }
+
+    .comoAccedoContenido {}
+
+    .comoAccedo img {
+        margin: 50px;
+    }
+
+    .comoAccedo p {
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .comoRegistro {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 125vh;
+
+    }
+
+    .comoRegistro h1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .comoRegistro img {
+        width: 500px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    .comoRegistro p {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .comoRegistro h1 {
+        color: #ffffff;
+        font-size: 25px;
+    }
+
+    .terminosCondiciones {
+        height: 155vh;
+    }
+}
+
+@media (max-width: 987px) {
+    .restablecerClave {
+        height: 110vh;
+    }
+}
+
+@media (max-width: 987px) {
+    .terminosCondiciones {
+        height: 170vh;
+    }
+}
+
+@media (max-width: 895px) {
+    .comoAccedo {
+        height: 170vh;
+    }
+
+    .terminosCondiciones {
+        height: 180vh;
+    }
+
+    .restablecerClave img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 830px) {
+    .comoAccedo {
+        height: 140vh;
+    }
+
+    .terminosCondiciones {
+        height: 190vh;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .restablecerClave img {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .terminosCondiciones {
+        height: 200vh;
+    }
+
+    .restablecerClave {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 150vh;
+    }
+
+    .restablecerClave div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .queEs div {
+        margin-top: 20px !important;
+        margin-left: 15px !important;
+        width: 80%
+    }
+
+    .comoAccedo {
+        height: 140vh;
+    }
+
+    .comoRegistro {
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 0 !important;
+    }
+
+    .comoRegistro h1 {
+        align-self: center;
+    }
+
+    .comoRegistro p {
+        align-self: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .comoRegistroContenido {
+        padding-left: 80px;
+    }
+
+
+
+}
+@media (max-width: 750px) {
+    .navBar{
+        display:none
+    }
+}
+@media (max-width: 740px) {
+    .queEs {
+        padding: 165px 0px 0px 0px;
+    }
+
+    .terminosCondiciones {
+        height: 210vh;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .terminosCondiciones {
+        height: 230vh;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .terminosCondiciones {
+        height: 250vh;
+    }
+
+    .terminosCondicionesContenido {
+        columns: 1;
+
+    }
+
+}
+
+@media (max-width: 450px) {
+    .comoRegistro img {
+        width: 350px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    .comoRegistro {
+        height: 120vh;
+    }
+
+    .subt {
+        text-align: center;
+    }
+
+    .terminosCondiciones {
+        height: 285vh;
+    }
+    .restablecerClave{
+        height: 180vh;
+    }
+    .restablecerClave image{
+        margin-bottom: 30px !important;
+
+    }
 }
