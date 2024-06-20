@@ -7,13 +7,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
     height: 80px;
     width: 100%;
     /* background-color: blue; */
     transition: background-color 0.3s ease;
 }
 
-
+h1 {
+    text-align: center !important;
+    padding-right: 0 !important;
+}
 
 .navBarCont img {
     height: 60%;
@@ -54,7 +58,8 @@ section {
 
 .queEs {
     padding: 12rem;
-    height: 70vh !important;
+    /* height: 70vh !important; */
+    height: auto;
     background-color: #1f89f6;
     width: 65%;
     top: -100px;
@@ -90,7 +95,8 @@ h1 {
     padding-left: 210px;
     padding-right: 120px;
     width: 100% !important;
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
     /* background-color: #0066ff; */
 
 }
@@ -148,7 +154,8 @@ h1 {
     padding-right: 120px;
     margin-top: 40px !important;
     background-color: #2eb1ff;
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
 
 }
 
@@ -239,22 +246,42 @@ h1 {
         width: 80%;
     }
 
-    .comoRegistro img {
-        width: 600px;
-
-    }
-
     .queEs {
         padding: 170px;
         padding-left: 100px;
     }
 
+    .comoAccedo {
+        height: auto;
+        padding: 8%;
+        width: 100%;
+        margin-bottom: 0 !important;
+    }
+
+    .comoRegistro {
+        height: auto;
+        padding: 8%;
+    }
+
+    .comoRegistro img {
+        width: 600px;
+
+    }
+
     .terminosCondiciones {
-        height: 125vh;
+        padding-top: 8%;
+        padding-bottom: 5%;
+        height: auto;
     }
 
     .restablecerClave {
-        padding-top: 100px;
+        height: auto;
+        padding: 8%;
+    }
+
+    .restablecerClave img {
+        width: 80% !important;
+
     }
 
     .aa p,
@@ -264,10 +291,12 @@ h1 {
     }
 }
 
-
-
-
 @media (max-width: 1270px) {
+
+    .navBar {
+        width: 75%;
+    }
+
     .comoAccedo {
         padding-left: 110px;
         padding-right: 0px;
@@ -277,12 +306,12 @@ h1 {
     }
 
     .comoRegistro {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .comoRegistro img {
-        width: 500px;
+        width: 90%;
     }
 
     .comoRegistro p {
@@ -295,17 +324,13 @@ h1 {
         font-size: 25px;
     }
 
-    .navBar {
-        width: 75%;
-    }
 
+    /* 
     .terminosCondiciones {
         height: 135vh;
-    }
+    } */
 
 }
-
-@media (max-width: 1235px) {}
 
 @media (max-width: 1180px) {
     .navBar {
@@ -317,16 +342,19 @@ h1 {
     }
 
     .queEsSecction {
-        height: 65vh;
+        height: auto;
     }
 
     .queEs {
         width: 100%;
-        height: 70vh !important;
+        padding-top: 18%;
+        height: auto !important;
     }
 
     .terminosCondiciones {
-        height: 145vh;
+        /* height: 145vh; */
+        padding: 5%;
+        padding-top: 10%;
     }
 }
 
@@ -334,13 +362,12 @@ h1 {
 
     .comoAccedo {
         flex-direction: column-reverse !important;
-        height: 150vh;
-        padding: 0;
+        /* height: 150vh; */
+        height: auto;
+        padding: 8%;
         width: 100%;
         margin-bottom: 0 !important;
     }
-
-    .comoAccedoContenido {}
 
     .comoAccedo img {
         margin: 50px;
@@ -354,18 +381,20 @@ h1 {
     .comoRegistro {
         display: flex !important;
         flex-direction: column !important;
-        height: 125vh;
-
+        /* height: 125vh; */
+        padding-top: 10%;
     }
 
     .comoRegistro h1 {
         width: 100%;
         margin: 0;
         padding: 0;
+        color: #ffffff;
+        font-size: 25px;
     }
 
     .comoRegistro img {
-        width: 500px;
+        width: 100%;
         margin-top: 40px;
         margin-left: 0;
     }
@@ -375,51 +404,61 @@ h1 {
         font-size: 15px;
     }
 
-    .comoRegistro h1 {
-        color: #ffffff;
-        font-size: 25px;
-    }
-
-    .terminosCondiciones {
+    /* .terminosCondiciones {
         height: 155vh;
-    }
+    } */
 }
 
-@media (max-width: 987px) {
+/* @media (max-width: 987px) {
     .restablecerClave {
         height: 110vh;
     }
+} */
+
+.restablecerClave img {
+    width: 90%;
 }
 
-@media (max-width: 987px) {
-    .terminosCondiciones {
-        height: 170vh;
-    }
-}
+/* .terminosCondiciones {
+     height: 170vh; 
+} */
 
 @media (max-width: 895px) {
-    .comoAccedo {
+    .queEs {
+        padding: 20% 15% 15% 15%;
+    }
+
+    /* .comoAccedo {
         height: 170vh;
-    }
+    } */
 
-    .terminosCondiciones {
+    /* .terminosCondiciones {
         height: 180vh;
+    } */
+
+    .restablecerClave {
+        padding-top: 15%;
     }
 
+    /* 
     .restablecerClave img {
         width: 350px;
-    }
+    } */
 }
 
 @media (max-width: 830px) {
-    .comoAccedo {
-        height: 140vh;
+    /* .comoAccedo {
+         height: 140vh; 
+    } */
+
+    .comoRegistro {
+        padding-top: 15%;
     }
 
     .terminosCondiciones {
-        height: 190vh;
+        padding-top: 15%;
+        /* height: 190vh; */
     }
-
 }
 
 @media (max-width: 800px) {
@@ -430,20 +469,22 @@ h1 {
 }
 
 @media (max-width: 770px) {
-    .terminosCondiciones {
-        height: 200vh;
-    }
+
+    /* .terminosCondiciones {
+        height: 200vh; 
+    } */
 
     .restablecerClave {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        height: 150vh;
+        height: auto;
     }
 
     .restablecerClave div {
         width: 100%;
+        padding-bottom: 8%;
     }
 }
 
@@ -454,9 +495,10 @@ h1 {
         width: 80%
     }
 
+    /* 
     .comoAccedo {
-        height: 140vh;
-    }
+         height: 140vh;
+    } */
 
     .comoRegistro {
         justify-content: center !important;
@@ -490,27 +532,30 @@ h1 {
 
 @media (max-width: 740px) {
     .queEs {
-        padding: 165px 0px 0px 0px;
+        padding: 20% 10% 10% 10%;
     }
 
-    .terminosCondiciones {
+    /* .terminosCondiciones {
         height: 210vh;
-    }
+    } */
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
 
     .terminosCondiciones {
-        height: 230vh;
+     height: 230vh;
     }
-}
+} */
 
 @media (max-width: 620px) {
 
-    .terminosCondiciones {
-        height: 250vh;
+    .queEs {
+        padding-top: 25%;
     }
 
+    /* .terminosCondiciones {
+        height: 250vh;
+    } */
     .terminosCondicionesContenido {
         columns: 1;
 
@@ -520,26 +565,28 @@ h1 {
 
 @media (max-width: 450px) {
     .comoRegistro img {
-        width: 350px;
+        width: 100%;
         margin-top: 40px;
         margin-left: 0;
     }
 
+    /* 
     .comoRegistro {
         height: 120vh;
-    }
+    } */
 
     .subt {
         text-align: center;
     }
 
+    /* 
     .terminosCondiciones {
         height: 285vh;
     }
 
     .restablecerClave {
         height: 180vh;
-    }
+    } */
 
     .restablecerClave image {
         margin-bottom: 30px !important;
@@ -550,46 +597,57 @@ h1 {
 @media (max-width: 400px) {
     .queEs {
         padding-top: 140px;
-        height: 280vh;
+        /* height: 280vh; */
     }
 
     .queEs h1 {
         font-size: 30px;
     }
 
-
+    /* 
     .comoAccedo {
         height: 150vh;
-    }
-
+    } */
+    /* 
     .terminosCondiciones {
         height: 350vh;
-    }
+    } */
 
-    .restablecerClave {
+    /* .restablecerClave {
         height: 190vh;
-    }
+    } */
 }
+
 @media (max-width: 370px) {
     .queEs {
-        padding-top: 110px;
-        height: 300vh;
+        padding: 110px 5% 5% 5%;
+        /* padding-top: ; */
+        /* height: 300vh; */
+        /* padding-left: 10px; */
     }
 
     .queEs h1 {
         font-size: 30px;
     }
 
+    .comoRegistroContenido {
+        padding: 0;
+    }
 
+    .comoAccedoContenido {
+        padding-right: 0;
+    }
+
+    /* 
     .comoAccedo {
         height: 180vh;
-    }
-
+    } */
+    /* 
     .terminosCondiciones {
         height: 420vh;
-    }
+    } */
 
-    .restablecerClave {
+    /* .restablecerClave {
         height: 250vh;
-    }
+    } */
 }

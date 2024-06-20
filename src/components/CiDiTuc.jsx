@@ -17,7 +17,7 @@ const CiDiTuc = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 150) {
+      if (offset > 10) {
         setScrolled(true);
       } else {
         setScrolled(false);
