@@ -20,7 +20,7 @@ h1 {
 }
 
 .navBarCont img {
-    height: 60%;
+    height: 0%;
     align-self: center;
 }
 
@@ -135,7 +135,7 @@ h1 {
     color: #333 !important
 }
 
-.damian {
+.imgQueEs {
     height: 620px;
     top: 0;
     width: 700px !important;
@@ -155,7 +155,6 @@ h1 {
     margin-top: 40px !important;
     background-color: #2eb1ff;
     /* height: 100vh; */
-    height: auto;
 
 }
 
@@ -169,7 +168,7 @@ h1 {
 }
 
 .comoRegistro img {
-    width: 700px;
+    width: 90%;
     border-radius: 20px;
     margin-left: 8.7px;
 }
@@ -237,6 +236,9 @@ h1 {
     border-radius: 10px;
     align-self: center;
     margin-top: 30px;
+    width: 50% !important;
+    box-shadow: 5px 5px 15px 2px #333558;
+
 }
 
 
@@ -337,7 +339,7 @@ h1 {
         width: 80%;
     }
 
-    .damian {
+    .imgQueEs {
         display: none;
     }
 

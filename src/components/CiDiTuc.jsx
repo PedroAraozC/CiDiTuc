@@ -4,7 +4,9 @@ import logoNav from "../assets/Logo-completo-muni.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import login from "../assets/login.png";
-import damian from "../assets/Damian.jpeg";
+// import imgQueEs from "../assets/Damian.jpeg";
+// import imgQueEs from "../assets/prueba1.jpg";
+import imgQueEs from "../assets/prueba2.jpg";
 import registro from "../assets/Registro.png";
 // import { useNavigate } from "react-router-dom";
 import restablecerClave from "../assets/restablecer-clave.png";
@@ -32,7 +34,7 @@ const CiDiTuc = () => {
 
   return (
     <div className="">
-      <img src={damian} alt="" className="damian" />
+      <img src={imgQueEs} alt="" className="imgQueEs" />
       <div className="">
         <div className={`navBarCont ${scrolled ? "scrolled" : ""}`}>
           <img src={logoNav} alt="logo nav" />
