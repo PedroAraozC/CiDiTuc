@@ -5,17 +5,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import login from "../assets/login.png";
 // import imgQueEs from "../assets/Damian.jpeg";
-// import imgQueEs from "../assets/prueba1.jpg";
 import imgQueEs from "../assets/prueba2.jpg";
 import registro from "../assets/Registro.png";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import restablecerClave from "../assets/restablecer-clave.png";
 import reenviarMail from "../assets/reenviar-mail.png";
 
 const CiDiTuc = () => {
-  // const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
-
+  const navigate = useNavigate();
+  const redirigir = (ruta) => {
+    navigate(ruta);
+    // setState(false);
+  };
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -44,7 +46,9 @@ const CiDiTuc = () => {
             <a href="#como-registro">¿Cómo me registro?</a>{" "}
             <a href="#terminos-condiciones">Terminos y Condiciones</a>{" "}
             <a href="#reestablecer-clave">Restablecer Contraseña</a>
-            <Button className="btn">Ingresar a CiDiTuc</Button>
+            <Button className="btn" onClick={() => redirigir("/home")}>
+              Ingresar a CiDiTuc
+            </Button>
           </div>
         </div>
       </div>
